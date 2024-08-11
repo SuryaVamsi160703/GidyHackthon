@@ -1,0 +1,74 @@
+/* exam.css */
+
+/* Ensure the container has a fixed size */
+.exam-container {
+    font-family: Arial, sans-serif;
+    width: 100%; /* Adjust to fit the available width */
+    max-width: 600px; /* Maximum width */
+    height: 100%; /* Adjust to fit the available height */
+    max-height: 500px; /* Maximum height */
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow-y: auto; /* Enable scrolling if content overflows */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional for a subtle shadow effect */
+  }
+  
+  /* Center text and adjust font size */
+  .exam-container h1 {
+    color: #333;
+    text-align: center;
+    font-size: 24px; /* Adjust font size */
+    margin-bottom: 20px;
+  }
+  
+  /* Remove default list styling */
+  .resource-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Style list items */
+  .resource-list li {
+    margin: -50px 0;
+  }
+  
+  /* Style links */
+  .resource-list a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 16px; /* Adjust font size */
+    word-break: break-word; /* Ensure long URLs break correctly */
+  }
+  
+  /* Hover effect for links */
+  .resource-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .exam-container h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+  .resource-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .resource-list li {
+    margin: 10px 0;
+  }
+  
+  .resource-list a {
+    color: #1e90ff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .resource-list a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,88 @@
+.header {
+  text-align: center;
+  font-size: 2rem;
+  color: #42dc3a;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  grid-template-rows: repeat(3, auto); /* 3 rows with auto height */
+  gap: 20px; /* Gap between grid items */
+  justify-content: center; /* Center items horizontally */
+}
+
+.card {
+  background-color: #312e2e;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 0 15px rgba(0, 0, 255, 0.5); /* Glow effect */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  justify-content: center; /* Center content vertically */
+  height: 100px; /* Fixed height */
+  width: 100px; /* Fixed width */
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center; /* Center text horizontally */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 255, 0.7); /* Enhanced glow effect on hover */
+}
+
+.cardContent {
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align content */
+  flex: 1;
+}
+
+.cardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.cardLink h3 {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #E8C872;
+  transition: color 0.3s;
+}
+
+.cardLink h3:hover {
+  color: #55ca3b; /* Change text color on hover */
+}
+
+/* Responsive design */
+@media (min-width: 600px) {
+  .card {
+    width: 120px; /* Adjust width for larger screens */
+    height: 120px; /* Adjust height for larger screens */
+  }
+
+  .cardLink h3 {
+    font-size: 1rem; /* Adjust font size for larger screens */
+  }
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: 150px; /* Adjust width for larger screens */
+    height: 150px; /* Adjust height for larger screens */
+  }
+
+  .cardLink h3 {
+    font-size: 1.2rem; /* Adjust font size for larger screens */
+  }
+}
